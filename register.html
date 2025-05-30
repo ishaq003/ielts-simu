@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | IELTS Computer-Based Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f2f2;
+    }
+
+    .header-logos {
+      background: white;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .header-logos img {
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #cc0000;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 25px;
+      background-color: #cc0000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a80000;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.95em;
+    }
+
+    .login-link a {
+      color: #cc0000;
+      text-decoration: none;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+      .header-logos {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-logos">
+    <img src="images/ielts-logo.png" alt="IELTS Logo" />
+    <img src="images/british-council-logo.png" alt="British Council Logo" />
+    <img src="images/idp-logo.png" alt="IDP Logo" />
+    <img src="images/cambridge-logo.png" alt="Cambridge Assessment Logo" />
+  </div>
+
+  <div class="container">
+    <h2>Create Your Account</h2>
+    <form action="dashboard.html" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" required />
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="login-link">
+      Already have an account? <a href="login.html">Login here</a>
+    </div>
+  </div>
+
+</body>
+</html>

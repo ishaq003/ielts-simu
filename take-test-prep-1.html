@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Sound | IELTS CBT</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    .header-logos {
+      background: white;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .header-logos img {
+      height: 50px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    h1 {
+      color: #cc0000;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 15px 0;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #cc0000;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: ;
+    }
+
+    .btn:hover {
+      background-color: #a80000;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    .notice {
+      color: #555;
+      margin-top: 25px;
+      font-style: italic;
+    }
+
+    @media (max-width: 500px) {
+      .header-logos {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-logos">
+    <img src="images/ielts-logo.png" alt="IELTS Logo" />
+    <img src="images/british-council-logo.png" alt="British Council Logo" />
+    <img src="images/idp-logo.png" alt="IDP Logo" />
+    <img src="images/cambridge-logo.png" alt="Cambridge Logo" />
+  </div>
+
+  <div class="container">
+    <h1>🎧 Test Sound</h1>
+    <p>Please put on your headphones.</p>
+    <p>Click the button below to play a sample sound.</p>
+
+    <button class="btn" onclick="document.getElementById('sampleAudio').play()">🔊 Play Sound</button>
+
+    <audio id="sampleAudio" src="audio/sample.mp3" preload="auto"></audio>
+
+    <p class="notice">
+      If you cannot hear the sound clearly,<br />
+      please tell the invigilator.
+    </p>
+
+    <a href="test-prep-2.html">
+      <button class="btn">Continue</button>
+    </a>
+  </div>
+
+</body>
+</html>
