@@ -107,21 +107,22 @@
 
   <div class="container">
     <h2>Create Your Account</h2>
-    <form action="dashboard.html" method="POST">
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" required />
+   <form onsubmit="handleRegister(event)">
+  <input type="text" id="username" required />
+  <input type="password" id="password" required />
+  <button type="submit">Register</button>
+</form>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required />
+<script>
+  function handleRegister(e) {
+    e.preventDefault(); // prevent form submission
+    const username = document.getElementById("username").value;
+    // Simulate success
+    alert("Registered successfully as " + username);
+    window.location.href = "login.html"; // or dashboard.html
+  }
+</script>
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required />
-
-      <label for="confirm-password">Confirm Password</label>
-      <input type="password" id="confirm-password" name="confirm-password" required />
-
-      <button type="submit">Register</button>
-    </form>
 
     <div class="login-link">
       Already have an account? <a href="login.html">Login here</a>
